@@ -1,0 +1,6 @@
+framework module OpenFlightCore {
+  umbrella header "OpenFlightCore.h"
+
+  export *
+  module * { export * }
+}

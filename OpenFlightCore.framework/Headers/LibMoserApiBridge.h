@@ -28,7 +28,7 @@
 //    SUCH DAMAGE.
 
 #import <Foundation/Foundation.h>
-#import <simd/SIMD.h>
+#import <simd/simd.h>
 
 #define MOSER_OG_H 100
 #define MOSER_OG_V 30

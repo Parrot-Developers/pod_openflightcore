@@ -30,9 +30,9 @@
 #import <Foundation/Foundation.h>
 #import <simd/simd.h>
 
-#define MOSER_OG_H 100
-#define MOSER_OG_V 30
-#define MOSER_OG_VSIZE 0.3f
+#define MOSER_OG_H 64
+#define MOSER_OG_V 32
+#define MOSER_OG_VSIZE 0.4f
 
 #define MOSER_DM_W 176
 #define MOSER_DM_H 90
@@ -40,7 +40,7 @@
 #define MOSER_THRESHOLD 80
 
 #define MOSER_DISPARITY_MAX 100
-
+#define MOSER_DISPARITY_SKY 251
 
 @interface LibMoserApiBridge : NSObject {
 

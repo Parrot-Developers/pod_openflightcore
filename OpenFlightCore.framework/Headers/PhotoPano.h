@@ -35,20 +35,21 @@ typedef NS_ENUM(NSInteger, PhotoPanoPreset) {
     // Numerical values must be kept in sync with C++ code (enum MakerPreset)
     /** Spherical panorama. */
     PhotoPanoPresetSphere = 0,
+    PhotoPanoPresetSphereBack = 1,
     /** Little-planet panorama. */
-    PhotoPanoPresetPlanet = 1,
+    PhotoPanoPresetPlanet = 2,
     /** Tunnel panorama. */
-    PhotoPanoPresetTunnel = 2,
+    PhotoPanoPresetTunnel = 3,
     /** Horizontal panorama, 180° spherical 2:1. */
-    PhotoPanoPresetHorizontal = 3,
+    PhotoPanoPresetHorizontal = 4,
     /** Vertical panorama, 70° recti 1:2. */
-    PhotoPanoPresetVertical = 4,
+    PhotoPanoPresetVertical = 5,
     /** Spherical panorama optimized for fast rendering. */
-    PhotoPanoPresetFastSphere = 5,
+    PhotoPanoPresetFastSphere = 6,
     /** Superwide panorama. */
-    PhotoPanoPresetSuperWide = 6,
+    PhotoPanoPresetSuperWide = 7,
     /** Custom panorama. */
-    PhotoPanoPresetCustom = 7,
+    PhotoPanoPresetCustom = 8,
 };
 
 /** Processing status code */

@@ -1,0 +1,24 @@
+#include "../../../out/product.xcconfig"
+
+IPHONEOS_DEPLOYMENT_TARGET = 14.0
+ALCHEMY_OUT_ROOT = ../../../out
+// ios build.sh variants
+VARIANT[sdk=iphoneos*] = ios
+VARIANT[sdk=iphonesimulator*] = ios_sim
+// alchemy product
+ALCHEMY_PRODUCT_DIR = $(ALCHEMY_OUT_ROOT)/$(ALCHEMY_PRODUCT)-$(VARIANT)
+
+// prebuilt target directory
+PREBUILT_DIR = $(BUILT_PRODUCTS_DIR)/prebuilt
+
+// prebuilt headers
+HEADER_SEARCH_PATHS = $(inherited) $(PREBUILT_DIR)/include
+
+// prebuilt libs
+LIBRARY_SEARCH_PATHS = $(inherited) $(PREBUILT_DIR)/lib
+
+LIB_MOSER = -lmoser -lconfig -lquaternion -lparrot-math -lulog
+LIB_PHOTO_PANO = -lphotopano -lakaze -ltinyxml -lopencv_world -lturbojpeg -ljsoncpp -lexif -lceres -lviz-gl -lviz-core -lphotopano-viewer
+
+OTHER_LDFLAGS = $(inherited) $(PODS_LDFLAGS) $(LIB_MOSER) $(LIB_PHOTO_PANO) -ObjC -w
+
